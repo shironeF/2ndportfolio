@@ -714,7 +714,6 @@ h3.my-proffesion
 
 #conts
 {
-    
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
@@ -738,6 +737,20 @@ h3.my-proffesion
     margin-top: 30px;
 }
 
+.fa-instagram
+{
+    color: var(--skin-color);
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.fa-facebook
+{
+    color: var(--skin-color);
+    font-size: 25px;
+    margin-top: 30px;
+}
+
 .contact-section .contact-info-item h4
 {
     font-size: 18px;
@@ -747,23 +760,111 @@ h3.my-proffesion
     margin: 15px 0 5px;
 }
 
-#ficon
-{
-    text-align: center;
-    padding-left: 10%;
-    margin-left: -10%;
-}
-#aicon
-{
-    text-align: center;
-    padding-left: 10%;
-    margin-left: 20%;
-    margin-right: 10%;
-}
-
 .contact-section .contact-info-item p
 {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
 }
+
+.contact-section .contact-form
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact-section .contact-form .col-6
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact-section .contact-form .col-12
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact-section .contact-form .form-item
+{
+    margin-bottom: 30px;
+}
+
+.contact-section .contact-form .form-item .form-control
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+.contact-section .contact-form .form-item
+ .form-control:focus
+ {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+ }
+ .contact-section .contact-form .form-item .textarea.form-control
+ {
+    height: 140px;
+
+ }
+ .contact-section .contact-form .btn
+ {
+    height: 50px;
+    padding: 0 50px;
+ }
+ @media (max-width: 1199px)
+    {
+        .aside
+        {
+            left: -270px;
+        }
+        .main-content
+        {
+            padding-left: 0;
+        }
+        .about .about-content .personal-info .info-item p span
+        {
+            display: block;
+            margin-left: 0;
+        }
+    }
+    
+    @media (max-width:991px)
+    {
+        .about .about-content .education,
+        .home .home-info
+        {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .home .home-img
+        {
+            display: none;
+        }
+
+        .portfolio .portfolio-item,
+        .service .service-item
+        {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    @media (max-width:767px)
+    {
+        .contact-section .contact-form .col-6,
+        .contact-section .contact-info-item,
+        .portfolio .portfolio-item,
+        .service .service-item,
+        .about .about-content .experience,
+        .about .about-content .education,
+        .about .about-content .skills,
+        .about .about-content .personal-info
+        {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
