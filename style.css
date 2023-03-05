@@ -652,6 +652,7 @@ h3.my-proffesion
 {
     flex: 0 0 100%;
     max-width: 100%;
+    margin-bottom: 40px;
 }
 .portfolio .portfolio-heading h2
 {
@@ -674,4 +675,95 @@ h3.my-proffesion
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img
+{
+    width: 100%;
+    display: block  ;
+}
+
+/*contact*/
+.contact-title
+{
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contact-sub-title
+{
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+.contact-section .contact-info-item
+{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact .contact-info-item .icon
+{
+    display: inline-block;
+}
+
+#conts
+{
+    
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+
+.contact-section .contact-info-item .icon .fa
+{
+    font-size: 25px;
+    color: var(--skin-color);
+}
+.fa-linkedin
+{
+    color: var(--skin-color);
+    font-size: 25px;
+    margin-top: 30px;
+}
+.fa-github
+{
+    color: var(--skin-color);
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.contact-section .contact-info-item h4
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+#ficon
+{
+    text-align: center;
+    padding-left: 10%;
+    margin-left: -10%;
+}
+#aicon
+{
+    text-align: center;
+    padding-left: 10%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.contact-section .contact-info-item p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
 }
