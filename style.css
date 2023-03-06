@@ -1106,3 +1106,10 @@ h3.my-profession
         font-size: 12px;
          }
     }
+    @media (max-width: 1475px)
+    {
+        .home .home-img.padd-15::before, .home .home-img.padd-15::after
+        {
+            display: none;
+        }
+    }

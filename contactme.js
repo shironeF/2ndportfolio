@@ -9,7 +9,7 @@
         msg.innerHTML = "Message Sent Successfully, Thank You!"
         setTimeout(function(){
             msg.innerHTML = ""
-        },5000)
+        },8000)
         form.reset()
     })
       .catch(error => console.error('Error!', error.message))
