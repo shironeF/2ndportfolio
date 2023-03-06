@@ -302,7 +302,7 @@ h3.hello span
     font-size: 30px;
     color: var(--skin-color);
 }
-h3.my-proffesion
+h3.my-profession
 {
     font-size: 30px;
     margin: 15px 0;
@@ -767,34 +767,66 @@ h3.my-proffesion
 
 .contact .contact-info-item .icon .fa
 {
-    font-size: 25px;
+    font-size: 40px;
     color: var(--skin-color);
+    transition: transform 0.5s;
 }
+.contact .contact-info-item .icon .fa:hover
+{
+    color: orange;
+    transform: translateY(-5px);
+}
+
 .fa-linkedin
 {
     color: var(--skin-color);
-    font-size: 25px;
+    font-size: 45px;
     margin-top: 30px;
+    transition: transform 0.5s;
 }
+.fa-linkedin:hover
+{
+    color: orange;
+    transform: translateY(-5px);
+}
+
 .fa-github
 {
     color: var(--skin-color);
-    font-size: 25px;
+    font-size: 45px;
     margin-top: 30px;
+    transition: transform 0.5s;
+}
+.fa-github:hover
+{
+    color: orange;
+    transform: translateY(-5px);
 }
 
 .fa-instagram
 {
     color: var(--skin-color);
-    font-size: 25px;
+    font-size: 45px;
     margin-top: 30px;
+    transition: transform 0.5s;
+}
+.fa-instagram:hover
+{
+    color: orange;
+    transform: translateY(-5px);
 }
 
 .fa-facebook
 {
     color: var(--skin-color);
-    font-size: 25px;
+    font-size: 45px;
     margin-top: 30px;
+    transition: transform 0.5s;
+}
+.fa-facebook:hover
+{
+    color: orange;
+    transform: translateY(-5px);
 }
 
 .contact .contact-info-item h4
@@ -904,12 +936,15 @@ h3.my-proffesion
 
 .layer a{
     margin-top: 20px;
+    color: orange;
     font-size: 18px;
     line-height: 60px;
+    background-color: #fff;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center;
+    
 }
 
 .work:hover img{
@@ -946,14 +981,25 @@ h3.my-proffesion
 
 /*image hover*/
 
-
  @media (max-width: 1199px)
     {
+        .aside .nav-toggler.open        {
+            left: 300px;
+        }
+
+        .section.open
+        {
+            left: 270px;
+        }
+
+        .layer p{
+            font-size: 11px;
+        }
         .aside
         {
             left: -270px;
         }
-        .aside .open
+        .aside.open
         {
             left: 0;
         }
@@ -976,6 +1022,9 @@ h3.my-proffesion
     
     @media (max-width:991px)
     {
+        .layer p{
+            font-size: 15px;
+        }
         .about .about-content .education,
         .home .home-info
         {
@@ -996,7 +1045,11 @@ h3.my-proffesion
     }
 
     @media (max-width:767px)
-    {   
+    {  
+         .layer p
+         {
+        font-size: 18px;
+         }
         .contact .contact-form .col-6,
         .contact .contact-info-item,
         .portfolio .portfolio-item,
@@ -1010,5 +1063,10 @@ h3.my-proffesion
             max-width: 100%;
         }
     }
-
-
+     @media (max-width:766px)
+    {  
+         .layer p
+         {
+        font-size: 12px;
+         }
+    }
