@@ -823,6 +823,100 @@ h3.my-proffesion
     height: 50px;
     padding: 0 50px;
  }
+
+ .portfolio-item .portfolio-item-inner .portfolio-img{
+    transition: transform 0.5s;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 10%;
+}
+
+
+/*image hover*/
+.layer{
+    width: 100%;
+    height: 0%;
+    background:linear-gradient(rgba(0,0,0,0.6),orange);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.layer p{
+    font-weight: 500;
+    color: white;
+}
+
+.layer h5{
+    margin-top: 5px;
+    font-weight: 500;
+    color: var(--bg-black-50)
+}
+
+.layer a{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.work-list{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+/*image hover*/
+
+
  @media (max-width: 1199px)
     {
         .aside
@@ -862,7 +956,7 @@ h3.my-proffesion
     }
 
     @media (max-width:767px)
-    {
+    {   
         .contact-section .contact-form .col-6,
         .contact-section .contact-info-item,
         .portfolio .portfolio-item,
@@ -876,3 +970,5 @@ h3.my-proffesion
             max-width: 100%;
         }
     }
+
+
