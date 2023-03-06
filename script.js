@@ -37,7 +37,7 @@ function removeBackSection()
 {
     for(let i=0; i<totalSection; i++)
     {
-        allSection[1].classList.remove("back-section");
+        allSection[i].classList.remove("back-section");
     }
 }
 function addBackSection(num)
@@ -59,7 +59,7 @@ function updateNav(element)
     {
         navList[i].querySelector("a").classList.remove("active");
         const target = element.getAttribute("href").split("#")[1];
-        if(target === navList[i].querySelector("a").getAnimations("href").split("#")[1])
+        if(target === navList[i].querySelector("a").getAttribute("href").split("#")[1])
         {
             navList[i].querySelector("a").classList.add("active");
         }
