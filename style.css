@@ -1003,6 +1003,12 @@ h3.my-profession
     transition: transform 0.5s;
 }
 
+#msg
+{
+    display: block;
+    color: var(--text-black-900);
+}
+
 /*image hover*/
 
  @media (max-width: 1199px)

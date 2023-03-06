@@ -463,31 +463,32 @@
                     <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
                     <h4 class="contact-sub-title">I'M VERY RESPONSIVE TO MESSAGES</h4>
                     <!--contact form-->
+                    <form name="submit-to-google-sheet">
                     <div class="row">
                         <div class="contact-form padd-15">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                                        <input name="Name" class="form-control" placeholder="Name">
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input name="Email" class="form-control" placeholder="Email">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                        <input name="Subject" class="form-control" placeholder="Subject">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                    <textarea name="Message" class="form-control" id="" placeholder="Message"></textarea>
                             </div>
                         </div>
                     </div>
@@ -500,6 +501,8 @@
                     </div>
                 </div>
                     </div>
+                </form>
+                <span id="msg"></span>
                 </div>
             </section>
             <!--Contact Section End-->
@@ -530,5 +533,6 @@
     <script src="style-switcher.js"></script>
     <script src="script2.js"></script>
     <script src="script3.js"></script>
+    <script src="contactme.js"></script>
 </body>
 </html>
