@@ -1053,6 +1053,11 @@ h3.my-profession
             display: block;
             margin-left: 0;
         }
+        .about .about-content .personal-info .info-item p span
+        {
+            display: block;
+            margin-left: 0;
+        }
     }
     
     @media (max-width:991px)
@@ -1098,6 +1103,10 @@ h3.my-profession
             flex: 0 0 100%;
             max-width: 100%;
         }
+        #email
+        {
+            display: block;
+        }
     }
      @media (max-width:766px)
     {  
@@ -1105,11 +1114,21 @@ h3.my-profession
          {
         font-size: 12px;
          }
+         
+        #email
+        {
+            display: block;
+        }
     }
     @media (max-width: 1475px)
     {
         .home .home-img.padd-15::before, .home .home-img.padd-15::after
         {
             display: none;
+        }
+        
+        #email
+        {
+            display: block;
         }
     }
